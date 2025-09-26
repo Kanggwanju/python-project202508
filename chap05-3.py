@@ -30,5 +30,5 @@ print(f'제거된 곡명: {removed}')
 # remove 리스트에서 특정 값 지정 제거
 # 내 생각: index로 찾고, 있으면 그 값 제거
 removedIndex = my_playlist.index('Ditto')
-my_playlist.remove('Ditto')
+my_playlist.remove('Ditto') # 제거하려는 값이 리스트에 없으면 에러
 print(removedIndex, my_playlist)
