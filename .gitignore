@@ -3,6 +3,7 @@ venv/
 env/
 ENV/
 .venv/
+*.mp4
 
 # Python 캐시
 __pycache__/
