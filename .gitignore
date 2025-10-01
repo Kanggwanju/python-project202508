@@ -1,2 +1,47 @@
-.vscode
+# Python 가상환경
+venv/
+env/
+ENV/
+.venv/
+
+# Python 캐시
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# 배포 파일
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# 환경 변수
+.env
+.env.local
+
+# IDE 설정
+.vscode/
 .idea/
+*.swp
+*.swo
+*~
+
+# OS 파일
+.DS_Store
+Thumbs.db
+
+# 모델 파일 (용량 큰 경우)
+*.h5
+*.pkl
+*.pth
+*.ckpt
+
+# 데이터 파일 (필요시)
+# data/
+# videos/
+# *.mp4
+# *.avi
