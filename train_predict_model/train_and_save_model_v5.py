@@ -83,7 +83,7 @@ import random
 # ============================================================
 # 1. 개선된 데이터 증강 함수 (v3와 동일)
 # ============================================================
-def augment_sequence_realistic(sequence: np.ndarray, num_augmentations: int = 5):
+def augment_sequence_realistic(sequence: np.ndarray, num_augmentations: int = 8):
     """
     4가지 증강 기법을 순환하며 적용
 
@@ -329,7 +329,7 @@ if __name__ == "__main__":
             original_seq = seq[non_zero_frames]
 
             # 증강 (원본 + 5개)
-            augmented = augment_sequence_realistic(original_seq, num_augmentations=5)
+            augmented = augment_sequence_realistic(original_seq, num_augmentations=8)
 
             # 다시 패딩
             for aug_seq in augmented:
@@ -439,5 +439,5 @@ if __name__ == "__main__":
     print("학습 완료!")
     print("=" * 60)
     print("\n예측 실행 방법:")
-    print(f"   python .\\train_predict_model\\predict_sign_language.py --video \".\train_predict_model\test.mp4\" --model-dir \"{model_dir}\" --show-probs")
+    print(f"   python .\\train_predict_model\\predict_sign_language.py --video \".\\train_predict_model\\test.mp4\" --model-dir \"{model_dir}\" --show-probs")
     print("\n" + "=" * 60)
