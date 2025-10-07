@@ -5,6 +5,7 @@ ENV/
 .venv/
 *.mp4
 data/*
+*.mov
 
 # Python 캐시
 __pycache__/
